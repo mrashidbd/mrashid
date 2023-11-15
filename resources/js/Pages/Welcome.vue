@@ -25,7 +25,7 @@ defineProps({
     <div
         class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white"
     >
-        <div v-if="canLogin" class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
+        <div v-if="canLogin" class="sm:fixed sm:top-0 sm:right-0 p-2 text-right">
             <Link
                 v-if="$page.props.auth.user"
                 :href="route('dashboard')"
@@ -49,8 +49,8 @@ defineProps({
             </template>
         </div>
 
-        <div class="max-w-7xl mx-auto p-6 lg:p-8">
-            <div class="flex justify-center">
+        <div class="mx-auto p-6 lg:p-8">
+            <div class="flex items-center">
                 <svg
                     viewBox="0 0 62 65"
                     fill="none"
@@ -62,6 +62,10 @@ defineProps({
                         fill="#FF2D20"
                     />
                 </svg>
+                <h1 class="text-4xl ml-2">mRashid</h1>
+            </div>
+            <div class="menu">
+
             </div>
 
             <div class="mt-16">
